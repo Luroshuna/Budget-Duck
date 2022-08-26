@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Budget Duck</string>
     <string name="add_btn">ADD</string>
+    <string name="new_entry_title">Add new Expense or Revenue</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="amount">Amount:</string>
 </resources>

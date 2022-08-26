@@ -14,7 +14,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/add_btn"
         android:text="@string/add_btn"
-        android:textColor="#004D40"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
