@@ -67,8 +67,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:ems="10"
-            android:inputType="numberDecimal"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -86,96 +86,96 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/travelling" />
+                    android:text="@string/travelling"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_food"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/food" />
+                    android:text="@string/food"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_gifts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/gifts" />
+                    android:text="@string/gifts"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_family_and_friends"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/family_and_friends" />
+                    android:text="@string/family_and_friends"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_paycheck"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/paycheck" />
+                    android:text="@string/paycheck"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_games"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/games" />
+                    android:text="@string/games"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_social_media"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/video_editing_and_streaming" />
+                    android:text="@string/video_editing_and_streaming"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_music"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/music" />
+                    android:text="@string/music"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_house"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/house" />
+                    android:text="@string/house"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_hobbies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/hobbies" />
+                    android:text="@string/hobbies"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_pets"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/pets" />
+                    android:text="@string/pets"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radio_electronics"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:textSize="20sp"
-                    android:text="@string/electronics" />
+                    android:text="@string/electronics"
+                    android:textSize="20sp" />
 
             </RadioGroup>
         </ScrollView>
@@ -186,8 +186,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:minHeight="48dp"
-            android:textSize="20sp"
-            android:text="@string/it_s_an_expense" />
+            android:text="@string/it_s_an_expense"
+            android:textSize="20sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,13 @@ package com.example.budgetduck
 
 import android.app.AlertDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioGroup
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 
 class EntryPage : AppCompatActivity() {
@@ -40,7 +43,7 @@ class EntryPage : AppCompatActivity() {
             val category = findViewById<RadioGroup>(R.id.radio_group)
             val isExpense = findViewById<SwitchCompat>(R.id.switch1)
 
-            if(TextUtils.isEmpty(amount.text)){
+            if (TextUtils.isEmpty(amount.text)) {
 
             } else {
 
