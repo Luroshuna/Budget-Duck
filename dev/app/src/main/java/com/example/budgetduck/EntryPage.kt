@@ -10,9 +10,10 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
+import androidx.core.view.get
 
 class EntryPage : AppCompatActivity() {
-    val entries = mutableListOf<Entries>()
+    private val entries = Entries()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,22 +39,46 @@ class EntryPage : AppCompatActivity() {
         //Create Button
         val save = findViewById<Button>(R.id.save_btn)
         save.setOnClickListener {
-            val entry: Entry
+            var isValid = true
+            val entry = Entry("","",false)
             val amount = findViewById<EditText>(R.id.editTextNumberDecimal)
             val category = findViewById<RadioGroup>(R.id.radio_group)
             val isExpense = findViewById<SwitchCompat>(R.id.switch1)
 
             if (TextUtils.isEmpty(amount.text)) {
-
-            } else {
-
+                showError("No amount entered!")
+                isValid = false
             }
 
+            val selectedRadioButtonId: Int = category.checkedRadioButtonId
 
-            Toast.makeText(this, "Entry successfully created!", Toast.LENGTH_SHORT).show()
+            if (selectedRadioButtonId == -1) {
+                showError("No category selected!")
+                isValid = false
+            }
 
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            if(isValid){
+                entry.amount = amount.text.toString()
+                entry.category = category[selectedRadioButtonId].transitionName
+                entry.isExpense = isExpense.isActivated
+
+                entries.addEntry(entry)
+
+                Toast.makeText(this,
+                    "Entry successfully created! " + entry.amount.toString() +
+                            " : " + entry.category.toString() +
+                            " : " + entry.isExpense.toString(), Toast.LENGTH_LONG).show()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
+    }
+
+    private fun showError(message: String){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage(message)
+        builder.setPositiveButton(android.R.string.ok) { _, _ -> }
+        builder.show()
     }
 }

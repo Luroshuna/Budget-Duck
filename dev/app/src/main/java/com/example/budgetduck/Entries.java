@@ -1,12 +1,13 @@
 package com.example.budgetduck;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Entries {
-    List<Entry> entries;
+    ArrayList<Entry> entries;
 
-    public Entries(List<Entry> entries) {
-        this.entries = entries;
+    public Entries() {
+        this.entries = new ArrayList<>();
     }
 
     public List<Entry> getEntries() {
