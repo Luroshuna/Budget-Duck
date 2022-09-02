@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TableLayout
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -33,8 +34,13 @@ class MainActivity : AppCompatActivity() {
         reset.setOnClickListener {
             entries.entries.clear()
             fortune.setText("0")
-            finish()
-            startActivity(intent)
+        }
+
+        //Load entries
+        val entryTable = findViewById<TableLayout>(R.id.entry_table)
+
+        for (entry in allEntries) {
+
         }
     }
 }

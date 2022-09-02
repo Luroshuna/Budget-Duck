@@ -20,4 +20,6 @@
     <string name="it_s_an_expense">It\'s an Expense</string>
     <string name="reset">Reset</string>
     <string name="_0">0</string>
+    <string name="category">Category</string>
+    <string name="amount2">Amount</string>
 </resources>

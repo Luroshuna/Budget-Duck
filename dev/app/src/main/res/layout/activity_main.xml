@@ -57,5 +57,41 @@
             android:textSize="50sp"
             android:textStyle="bold"
             tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <TableLayout
+                android:id="@+id/entry_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category"
+                        android:textAlignment="viewStart"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount2"
+                        android:textAlignment="viewEnd"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
