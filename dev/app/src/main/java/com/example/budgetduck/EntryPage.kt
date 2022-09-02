@@ -4,13 +4,12 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioGroup
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.get
+import java.io.Console
+import java.util.Map.entry
 
 class EntryPage : AppCompatActivity() {
     private val entries = Entries()
@@ -26,8 +25,7 @@ class EntryPage : AppCompatActivity() {
             builder.setMessage("Are you sure you want to Cancel?")
                 .setCancelable(false)
                 .setPositiveButton("Yes") { dialog, id ->
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
+                    finish()
                 }
                 .setNegativeButton("No") { dialog, id ->
                     dialog.dismiss()
@@ -59,17 +57,13 @@ class EntryPage : AppCompatActivity() {
 
             if(isValid){
                 entry.amount = amount.text.toString()
-                entry.category = category[selectedRadioButtonId].transitionName
+                val checkedRadioButton: RadioButton = findViewById(selectedRadioButtonId)
+                entry.category = checkedRadioButton.text.toString()
                 entry.isExpense = isExpense.isActivated
-
                 entries.addEntry(entry)
 
-                Toast.makeText(this,
-                    "Entry successfully created! " + entry.amount.toString() +
-                            " : " + entry.category.toString() +
-                            " : " + entry.isExpense.toString(), Toast.LENGTH_LONG).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                Toast.makeText(this, "Entry successfully created!", Toast.LENGTH_LONG).show()
+                finish()
             }
         }
     }

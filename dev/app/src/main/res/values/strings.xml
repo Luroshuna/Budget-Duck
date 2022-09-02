@@ -1,9 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Budget Duck</string>
     <string name="add_btn">ADD</string>
     <string name="new_entry_title">Add new Expense or Revenue</string>
     <string name="save">SAVE</string>
-    <string name="cancel">CANCEL</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
     <string name="amount">Amount:</string>
     <string name="travelling">Travelling</string>
     <string name="food">Food</string>
@@ -18,4 +18,5 @@
     <string name="gifts">Gifts</string>
     <string name="paycheck">Paycheck</string>
     <string name="it_s_an_expense">It\'s an Expense</string>
+    <string name="reset">Reset</string>
 </resources>

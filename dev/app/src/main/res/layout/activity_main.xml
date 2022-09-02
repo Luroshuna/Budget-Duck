@@ -18,4 +18,43 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/reset_btn"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/reset_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/fortune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
