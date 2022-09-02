@@ -52,6 +52,7 @@
             android:layout_marginTop="16dp"
             android:importantForAutofill="no"
             android:inputType="numberDecimal|numberSigned"
+            android:text="@string/_0"
             android:textAlignment="center"
             android:textSize="50sp"
             android:textStyle="bold"

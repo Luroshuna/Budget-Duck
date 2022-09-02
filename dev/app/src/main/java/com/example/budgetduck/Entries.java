@@ -10,7 +10,7 @@ public class Entries {
         this.entries = new ArrayList<>();
     }
 
-    public List<Entry> getEntries() {
+    public ArrayList<Entry> getEntries() {
         return entries;
     }
 
