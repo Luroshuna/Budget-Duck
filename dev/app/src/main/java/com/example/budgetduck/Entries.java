@@ -1,7 +1,6 @@
 package com.example.budgetduck;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Entries {
     ArrayList<Entry> entries;

@@ -19,4 +19,5 @@
     <string name="paycheck">Paycheck</string>
     <string name="it_s_an_expense">It\'s an Expense</string>
     <string name="reset">Reset</string>
+    <string name="_0">0</string>
 </resources>
