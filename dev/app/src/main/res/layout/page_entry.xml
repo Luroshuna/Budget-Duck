@@ -84,27 +84,11 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/radio_travelling"
+                    android:id="@+id/radio_electronics"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="@string/travelling"
-                    android:textSize="20sp" />
-
-                <RadioButton
-                    android:id="@+id/radio_food"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="48dp"
-                    android:text="@string/food"
-                    android:textSize="20sp" />
-
-                <RadioButton
-                    android:id="@+id/radio_gifts"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="48dp"
-                    android:text="@string/gifts"
+                    android:text="@string/electronics"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -116,11 +100,11 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radio_paycheck"
+                    android:id="@+id/radio_food"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="@string/paycheck"
+                    android:text="@string/food"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -132,27 +116,11 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radio_social_media"
+                    android:id="@+id/radio_gifts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="@string/video_editing_and_streaming"
-                    android:textSize="20sp" />
-
-                <RadioButton
-                    android:id="@+id/radio_music"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="48dp"
-                    android:text="@string/music"
-                    android:textSize="20sp" />
-
-                <RadioButton
-                    android:id="@+id/radio_house"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="48dp"
-                    android:text="@string/house"
+                    android:text="@string/gifts"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -164,19 +132,19 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radio_pets"
+                    android:id="@+id/radio_house"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="@string/pets"
+                    android:text="@string/house"
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radio_electronics"
+                    android:id="@+id/radio_music"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="@string/electronics"
+                    android:text="@string/music"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -185,6 +153,38 @@
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
                     android:text="@string/online_shopping"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_paycheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/paycheck"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_pets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/pets"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_social_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/video_editing_and_streaming"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_travelling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/travelling"
                     android:textSize="20sp" />
 
             </RadioGroup>
