@@ -1,8 +1,9 @@
 package com.example.budgetduck;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Entries {
+public class Entries implements Serializable {
     ArrayList<Entry> entries;
 
     public Entries() {

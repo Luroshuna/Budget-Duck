@@ -179,6 +179,14 @@
                     android:text="@string/electronics"
                     android:textSize="20sp" />
 
+                <RadioButton
+                    android:id="@+id/radio_online_shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/online_shopping"
+                    android:textSize="20sp" />
+
             </RadioGroup>
         </ScrollView>
 
