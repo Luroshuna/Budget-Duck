@@ -8,10 +8,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.green
-import androidx.core.graphics.red
-import androidx.core.view.marginStart
-import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -86,7 +82,7 @@ class MainActivity : AppCompatActivity() {
                 //Set Text and color, if it's an expanse it'll add a - to the amount to make it negative
                 //Expenses will be marked red and revenues will be green
                 newCategory.text = entry.category
-                if (entry.isExpense){
+                if (entry.isExpense) {
                     newAmount.text = "-${entry.amount}"
                     newCategory.setTextColor(Color.parseColor("#FF0000"))
                     newAmount.setTextColor(Color.parseColor("#FF0000"))

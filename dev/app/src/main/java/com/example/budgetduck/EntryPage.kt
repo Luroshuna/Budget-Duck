@@ -8,7 +8,6 @@ import android.text.TextUtils
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
-import java.io.Serializable
 
 
 class EntryPage : AppCompatActivity() {
